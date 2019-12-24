@@ -2,7 +2,8 @@ name: CI
 
 on:
   push:
-  schedule: "*/10 * * *"
+  schedule:
+    - cron: "*/10 * * *"
 
 jobs:
   build:
