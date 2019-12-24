@@ -22,7 +22,3 @@ jobs:
       - run: npm i
       - run: npm i --save-dev serverless serverless-glob-merge-yaml
       - run: npm test
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
