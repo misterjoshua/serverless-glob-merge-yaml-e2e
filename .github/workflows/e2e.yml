@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - run: npm i
       - run: npm i --save-dev serverless serverless-glob-merge-yaml
       - run: npm test
       - name: Coveralls
